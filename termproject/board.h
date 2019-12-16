@@ -19,7 +19,6 @@ protected:
 public:
     board();
     void printBoard();
-    std::string getType(int cur);
     bool canExplode(int color);
     void deleteBlock(int color, std::vector<std::string> visit);
     void explode();

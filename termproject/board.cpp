@@ -29,7 +29,6 @@ board::board(){
 void board::printBoard(){
     system("clear");//먼저 청소
     std::cout << "Score : " << score << std::endl;
-    std::cout << "Next : " << getType(type) << std::endl;
 
     for(int i=1; i<13; i++) {
         for(int j=1; j<6; j++)
@@ -37,10 +36,7 @@ void board::printBoard(){
         std::cout << std::endl;
     }
 }
-std::string board::getType(int cur){
-    std::string abc[] = {"fold","cross","tree"};
-    return abc[cur];
-}
+
 bool board::canExplode(int color){
     int cnt = 0;
 	bool ret = 0;
